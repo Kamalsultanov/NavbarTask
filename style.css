@@ -1,0 +1,48 @@
+* { 
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+    background: #e0f0e6;
+}
+nav{
+    min-width: 50vh;
+    background: #303030;
+    margin: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu{
+    padding: 10px;
+}
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: white;
+}
+#menu ul li a{ display: none;}
+#searchtab{
+    padding: 5px;
+    display: flex;
+}
+#tab{
+    min-width: 10vh;
+    padding: 15px;
+ }
+#button{
+    min-width: 10vh;
+    padding: 15px;
+    border: none;
+    background: #67a892;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    #menu ul li a{ display: inline-block;
+        padding: 10px;}
+    #hamburger {display: none;}
+    nav{ min-width: 100vh;}
+}
